@@ -1,0 +1,9 @@
+export const formatWatYouInput = value => {
+  debugger
+  let number = Number(value)
+  let string = value.toString()
+  if (string.includes('.') && string.length - string.indexOf('.') > 3) {
+    return number.toFixed(2)
+  }
+  return number
+}
